@@ -6,6 +6,16 @@
 # include <stdio.h>
 # include <stdint.h>
 # include <stdbool.h>
+# include <stdlib.h> 
+# include <stdlib.h>
+# include <pthread.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <sys/time.h>
+# include <string.h>
+#define TRUE 1
+#define FALSE 0
+
 
 typedef struct s_optoions	t_opts;
 typedef struct s_runtime	t_run;
@@ -24,7 +34,7 @@ struct			s_runtime
 
 struct			s_options
 {
-	bool		runtime;
+	int		runtime;
 	int			num_of_philos;
 	uint64_t	time_to_eat;
 	uint64_t	time_to_sleep;
